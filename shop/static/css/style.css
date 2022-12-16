@@ -14,12 +14,12 @@
 }
 
 :root{
-  --green:#191919;
-  --black:#2c2c54;
+  --buttonblack:#000000;
+  --lightbutton:#353535;
 }
 
 *::selection{
-  background:var(--green);
+  background:var(--buttonblack);
   color:white;
 }
 
@@ -43,7 +43,7 @@ section{
 }
 
 .logo{
-  color:var(--black);
+  color:var(--lightbutton);
   font-weight: bolder;
   font-size: 30px;
   cursor: pointer;
@@ -52,9 +52,12 @@ section{
 
 .logo i{
   padding-right: 5px;
-  color:var(--green);
+  color:var(--buttonblack);
 }
-
+.logo i :hover{
+  padding-right: 5px;
+  color:var(--lightbutton);
+}
 .header-1 .search-box-container{
   display: flex;
   height: 50px;
@@ -76,11 +79,22 @@ section{
   font-size: 25px;
   line-height: 50px;
   color:#fff;
-  background:var(--green);
+  background:var(--buttonblack);
   text-align: center;
   cursor: pointer;
+  border-radius:50px
 }
-
+.header-1 .search-box-container label :hover{
+  height: 100%;
+  width: 80px;
+  font-size: 25px;
+  line-height: 50px;
+  color:#fff;
+  background:var(--lightbutton);
+  text-align: center;
+  cursor: pointer;
+  border-radius:50px
+}
 .header-2{
   background:#fff;
   display: flex;
@@ -95,26 +109,26 @@ section{
   padding: 5px 15px;
   font-size: 20px;
   border-radius: 5px;
-  color:var(--black);
+  color:var(--lightbutton);
   cursor: pointer;
   text-decoration: none;
 }
 
 .header-2 .navbar a:hover{
-  background:var(--green);
+  background:var(--buttonblack);
   color:#fff;
 }
 
 .header-2 .icons a{
   font-size: 20px;
-  color:var(--black);
+  color:var(--lightbutton);
   padding-left: 10px;
   text-decoration: none;
 
 }
 
 .header-2 .icons a:hover{
-  color:var(--green);
+  color:var(--buttonblack);
 }
 
 /* .header-2 .lining {
@@ -123,7 +137,7 @@ section{
 
 .header-2 .lining a{
   font-size: 2rem;
-  color:var(--black);
+  color:var(--lightbutton);
   padding-left: 1rem;
   text-decoration: none;.
   display: inline-block;
@@ -132,9 +146,9 @@ section{
 #menu-bar{
   font-size: 30px;
   border-radius: 5px;
-  border:1px solid var(--black);
+  border:1px solid var(--lightbutton);
   padding: 8px 15px;
-  color:var(--black);
+  color:var(--lightbutton);
   cursor: pointer;
   display: none;
 }
@@ -167,12 +181,12 @@ section{
   
 .first .welc h3{
     font-size: 50px;
-    color:var(--black);
+    color:var(--lightbutton);
 }
 
 .btn1{
     font-size: 17px;
-    background:var(--green);
+    background:var(--buttonblack);
     display: inline-block;
     color:#fff;
     padding:8px 30px;
@@ -182,7 +196,18 @@ section{
     text-decoration: none;
     margin-top: 10px;
 }
-  
+.btn1 :hover{
+  font-size: 17px;
+  background:var(--lightbutton);
+  display: inline-block;
+  color:#fff;
+  padding:8px 30px;
+  font-size: 17px;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 10px;
+}  
 .cat .card-panel{
     display: flex;
     gap: 15px;
@@ -206,7 +231,7 @@ section{
   
 .cat .card-panel .card h3{
     font-size: 20px;
-    color:var(--black);
+    color:var(--lightbutton);
 }
   
 .cat .card-panel .card p{
@@ -220,20 +245,32 @@ section{
 }
 
 .btn2{
-    display: inline-block;
-    margin-top: 10px;
-    background:var(--green);
-    color:#fff;
-    padding: 8px 30px;
-    font-size: 17px;
-    text-align: center;
-    cursor: pointer;
-    text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+  background:var(--buttonblack);
+  color:#fff;
+  padding: 8px 30px;
+  font-size: 17px;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius:15px
 }
-
+.btn2 :hover{
+  display: inline-block;
+  margin-top: 10px;
+  background:var(--lightbutton);
+  color:#fff;
+  padding: 8px 30px;
+  font-size: 17px;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 0;
+}
 .span1{
     text-align: center;
-    color:var(--black);
+    color:var(--lightbutton);
     text-transform: uppercase;
     padding: 10px;
     font-size: 35px;
@@ -241,7 +278,7 @@ section{
 }
   
 .span1 span{
-    color:var(--green);
+    color:var(--buttonblack);
     text-transform: uppercase;
 }
 
@@ -258,7 +295,7 @@ section{
 
 .footer .box-container .box h3{
   font-size: 25px;
-  color:var(--black);
+  color:var(--lightbutton);
 }
 
 .footer .box-container .box p{
@@ -281,7 +318,7 @@ section{
 
 .footer .box-container .box .links a:hover{
   text-decoration: underline;
-  color:var(--green);
+  color:var(--lightbutton);
 }
 
 .footer .credit{
@@ -293,7 +330,7 @@ section{
 }
 
 .footer .credit span{
-  color:var(--green);
+  color:var(--buttonblack);
 }
 
 .title {
@@ -418,7 +455,7 @@ section{
     .header-2 .navbar{
       position: absolute;
       top:100%; left: 0; right:0;
-      background:var(--black);
+      background:var(--lightbutton);
       padding:10px 20px;
       display: none;
     }
