@@ -66,6 +66,7 @@ def customerLogin():
     if form.validate_on_submit():
         email = form.email.data
         if email[-8:] == 'site.com':
+            if admin and bcrypt.check_password_hash(admin.password, form.password.data):
                 name = admin.username
                 session['email'] = form.email.data
                 session['id'] = admin.id
@@ -76,6 +77,9 @@ def customerLogin():
                 db.session.add(log)
                 db.session.commit()
                 return redirect(url_for('admin'))
+            else:
+                flash(f'Wrong email and password', 'danger')
+                return redirect(url_for('customerLogin'))
         else:
 
             if customer and bcrypt.check_password_hash(customer.password, form.password.data):
