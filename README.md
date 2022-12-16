@@ -18,7 +18,7 @@ pip install:
 12)	email_validators
 13)	stripe
 
-
+npm install @splinetool/runtime
 
 press run for run.py
 go to the routeing page for werkzeug
