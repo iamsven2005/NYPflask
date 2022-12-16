@@ -19,7 +19,7 @@ class Addproducts(Form):
 class ship(Form):
     first_name = StringField('First Name: ',[validators.DataRequired()], render_kw={'placeholder': 'John'})
     last_name = StringField('Last Name: ',[validators.DataRequired()], render_kw={'placeholder': 'Lee'})
-    company = StringField('Company (optional)', [validators.Optional()], render_kw={'placeholder': 'SGMART PTE LTD'})
+    company = StringField('Company (optional)', [validators.Optional()], render_kw={'placeholder': 'Agrgracefully PTE LTD'})
     address = StringField('Address', [validators.DataRequired()], render_kw={'placeholder': '542 W.15th Street'})
     unit_number = StringField('Unit Number', [validators.DataRequired()], render_kw={'placeholder': '#03-1234'})
     postal_code = IntegerField('Postal Code',[validators.DataRequired(message='Invalid Postal Code'), validators.NumberRange(min=100000, max=999999, message='Invalid Postal code')], render_kw={'placeholder': '123456'})
