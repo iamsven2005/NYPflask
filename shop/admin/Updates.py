@@ -1,12 +1,12 @@
 class Updates():
     def __init__(self, name, spend):
-        self.__name = name
-        self.__spend = spend
+        self.name = name
+        self.spend = spend
     def get_name(self):
-        return self.__name
+        return self.name
     def get_spend(self):
-        return self.__spend
+        return self.spend
     def set_name(self, name):
-        self.__name = name
+        self.name = name
     def set_spend(self, spend):
-        self.__spend = spend
+        self.spend = spend
