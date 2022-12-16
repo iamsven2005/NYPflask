@@ -18,7 +18,7 @@ pip install:
 12)	email_validators
 13)	stripe
 
-
+npm install @splinetool/runtime
 
 press run for run.py
 go to the routeing page for werkzeug
@@ -47,5 +47,5 @@ if...
 		... -> delete else
 
 original creator
-https://github.com/samuelyuoh/SGMart-flask
+https://github.com/samuelyuoh/Agrgracefully-flask
  go and tell only those you trust or have problems for app dev o7
